@@ -21,7 +21,8 @@ export const SearchCountry = ({ navigation }) => {
       .catch(err => {
         console.log('err', err)
       })
-  }
+  };
+
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <TextInput

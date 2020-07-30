@@ -1,4 +1,5 @@
 import React  from 'react';
+import { SvgUri } from 'react-native-svg';
 
 import {
   Text,
@@ -16,7 +17,7 @@ export const WeatherScreen = (props) => {
         <Text>Wind Speed: {wind_speed}</Text>
         <Text>Precip: {precip}</Text>
 
-        {weather_icons.map(uri => <Image key={uri} source={{uri, width: 32, height: 32}}/>)}
+        {weather_icons.map(uri => <SvgUri key={uri}  width='100%' height="600" uri={uri}/>)}
       </View>
     )
-}
+};
